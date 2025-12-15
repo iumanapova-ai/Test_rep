@@ -1,2 +1,3 @@
-sum = 1 + 2
-print(sum)
+class Summ_digit:
+    sum = 1 + 2 + 3
+    print(sum)
