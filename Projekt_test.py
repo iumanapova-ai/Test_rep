@@ -10,4 +10,3 @@ class Summ_digit:
 
 
 Summ_digit(1, 2).summ_digit()
-
