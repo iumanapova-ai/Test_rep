@@ -9,11 +9,18 @@
 
 from selenium import webdriver
 from selenium.webdriver.common.by import By
-import time
+from time import sleep
 
-driver = webdriver.Chrome()
+browser = webdriver.Chrome()
+sbis_site = 'https://saby.ru/'
+try:
+    browser.get(sbis_site)
+    sleep(1)
+    assert browser.current_url == sbis_site, 'Неверно открыт сайт'
+    start_btn = browser.find_element(By.CSS_SELECTOR, '.sbis_ru-Banner-btn')
+    start_btn.click()
+    handles = browser.window_handles
+    browser.switch_to.window(handles[1])
 
-time.sleep(5)
-
-driver.get("https://sbis.ru")
-time.sleep(1)
+finally:
+    browser.quit()
