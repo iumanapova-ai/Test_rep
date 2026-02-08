@@ -16,4 +16,4 @@ driver = webdriver.Chrome()
 time.sleep(5)
 
 driver.get("https://sbis.ru")
-time.sleep(5)
+time.sleep(1)
