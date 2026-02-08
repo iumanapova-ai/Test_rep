@@ -36,8 +36,7 @@ try:
     print(f'Кликнули по ссылке {button_txt}')
     assert browser.title == "Saby Контакты — Ярославская область", 'Неверно открыт сайт'
     print(f'Заголовок страницы {browser.title}')
-    # handles = browser.window_handles
-    # browser.switch_to.window(handles[1])
+    # handles =
 
 finally:
     browser.quit()
