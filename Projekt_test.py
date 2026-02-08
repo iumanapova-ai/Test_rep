@@ -1,12 +1,11 @@
-class Summ_digit:
-
-    def __init__(self, one_digit, two_digit):
-        self.one_digit = one_digit
-        self.two_digit = two_digit
-
-    def summ_digit(self):
-        summ = self.one_digit + self.two_digit
-        print(summ)
+# Перейти на https://sbis.ru/
+# Перейти в раздел "Контакты"
+# Найти баннер Тензор, кликнуть по нему
+# Перейти на https://tensor.ru/
+# Проверить, что есть блок новости "Сила в людях"
+# Перейдите в этом блоке в "Подробнее" и убедитесь, что открывается https://tensor.ru/about
+# Для сдачи задания пришлите код и запись с экрана прохождения теста
 
 
-Summ_digit(1, 2).summ_digit()
+from selenium import webdriver
+from selenium.webdriver.common.by import By
